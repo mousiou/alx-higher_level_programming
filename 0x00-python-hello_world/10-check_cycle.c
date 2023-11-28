@@ -9,7 +9,7 @@
  * @list: pointer to list
  * Return: 1 if success, else 0
  */
-int check_cycle(listint_t *lst)
+int check_cycle(listint_t *list)
 {
 	listint_t *slow = list, *fast = list;
 
