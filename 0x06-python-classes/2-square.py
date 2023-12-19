@@ -1,8 +1,20 @@
 #!/usr/bin/python3
+"""Square class"""
 
 
 class Square:
+    """Desines a square"""
+
     def __init__(self, size=0):
+        """Constructor
+
+        Args:
+            size: length
+
+        Raises:
+            TypeError: if size is not an int
+            ValueError: if size is less than 0
+        """
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
